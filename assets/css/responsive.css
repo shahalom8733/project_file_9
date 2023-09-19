@@ -1,0 +1,213 @@
+@media all and (max-width: 1200px){
+/*lorem-area*/
+.lorem-card {
+	grid-column-gap: 1rem;
+}
+.card-body {
+	padding: 2rem 1rem;
+}
+.card-title {
+	font-size: 3rem;
+}
+.card-text {
+	font-size: 1.6rem;
+}
+.coment-area {
+	justify-content: space-between;
+	font-size: 1.5rem;
+}
+
+
+}
+@media all and (min-width: 992px){
+.menu-area {
+	display: flex !important;
+}
+}
+@media all and (max-width: 991px){
+	/*header-menu*/
+	.after-button, .get {
+	display: block;
+
+}
+.menu-capacity {
+	position: relative;
+}
+.menu-area {
+	display: none;
+	flex-direction: column;
+	position: absolute;
+	width: 71rem;
+	left: -18rem;
+	top: 4rem;
+	background: #262626;
+	padding: 5rem 0rem;
+	z-index: 33345;
+}
+	.menu ul {
+	flex-direction: column;
+	padding-bottom: 6rem;
+}
+.sesion-btn a:first-child {
+	margin-left: 0rem;
+	margin-right: 2rem;
+}
+.menu ul li a {
+	padding-bottom: 1rem;
+	display: block;
+}
+.sesion-btn {
+	display: flex;
+	justify-content: center;
+}
+/*lorem-area*/
+.lorem-card {
+	grid-template-columns: repeat(2,1fr);
+}
+.card-body {
+	padding: 2rem 1rem;
+}
+.card-title {
+	font-size: 3rem;
+}
+.card-text {
+	font-size: 1.6rem;
+}
+.coment-area {
+	font-size: 1.5rem;
+}
+.card.card-area:last-child {
+	grid-column: span 2;
+	max-width: 26.8rem;
+	width: 100%;
+	margin: auto;
+}
+.menu ul li a::after {
+	bottom: 0.5rem;
+	
+}
+
+}
+
+@media all and (max-width:767px){
+	/*header-menu*/
+	.menu-area {
+	width: 59rem;
+	left: -16rem;
+	padding: 5rem 0rem;
+}
+/*footer-area*/
+.footer-padding {
+	padding-bottom: 8rem;
+}
+.card-title {
+	font-size: 2.8rem;
+}
+.card-text {
+	font-size: 1.5rem;
+}
+.email-area h3 {
+	font-size: 1.4rem;
+	margin-top: 3rem;
+}
+.visita h3 {
+	font-size: 1.7rem;
+}
+.visita p {
+	font-size: 1.6rem;
+	padding: 1.3rem 0rem;
+}
+
+}
+@media all and (max-width:575px){
+	.container {
+	padding: 0 2rem;
+}
+	/*header-menu*/
+	.menu-area {
+	width: 43rem;
+	left: -13rem;
+}
+.lorem-card {
+	grid-template-columns: repeat(1,1fr);
+}
+.card.card-area {
+	max-width: 40.8rem;
+	margin: auto;
+	width: 100%;
+}
+.card.card-area:last-child {
+	grid-column: span 1;
+	max-width: 40.8rem;
+}
+.after-button, .get {
+	width: 3rem;
+	height: 5.8rem;
+
+}
+.after-button::after, .get::after {
+	top: 4rem;
+}
+.after-button, .get {
+	height: 5.3rem;
+	margin-right: 2rem;
+}
+.widance-img img {
+	width: 11%;
+}
+.lorem-area {
+	padding: 9rem 0;
+}
+
+}
+@media all and (max-width: 480px){
+	/*header-menu*/
+	.menu-area {
+	width: 30rem;
+	left: -9rem;
+}
+/*footer-area*/
+.footer-padding {
+	padding-bottom: 2rem;
+}
+.visita-blog {
+	flex-wrap: wrap;
+}
+.visita {
+	padding-bottom: 4rem;
+	flex-basis: calc(100% /2);
+}
+.visita {
+	padding-bottom: 4rem;
+}
+.copy-area {
+	flex-direction: column;
+	align-items: center;
+}
+.menu-area {
+	width: 36rem;
+	left: -13rem;
+}
+.copy-area {
+	padding-top: 2rem;
+
+}
+.footer-area {
+	padding: 2rem 0;
+	padding-top: 5rem;
+}
+.form-area {
+	margin-bottom: 3rem;
+}
+.visita:last-child {
+	padding: 0;
+}
+.visita p {
+	font-size: 1.2rem;
+	padding: 0.6rem 0rem;
+}
+.visita-icong {
+	display: flex;
+	margin-top: 0.8rem;
+}
+}

@@ -1,0 +1,531 @@
+/*
+Template Name: Widance
+Author: Shah-alom
+Description:This is Test Dancer Website
+Tags: Widance website, html template
+Version: 1.0.0
+ 
+Table of Content
+================
+** @font-face **
+** Default CSS **
+1: Header Top Area 
+2: lorem-area
+3: footer-area;
+*/
+
+
+/*@font-face*/
+.hover {
+  font-family: Helevetica, sans-serif;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  width: 200px;
+  height: 50px;
+  border-radius: 2.5rem;
+  background: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 20px;
+}
+
+.hover:hover .hover-line-top {
+  transform: scale(1);
+  transform-origin: left;
+}
+
+.hover:hover .hover-line-right {
+  transform: scale(1);
+  transform-origin: top;
+  transition-delay: 0.35s;
+}
+
+.hover:hover .hover-line-bottom {
+  transform: scale(1);
+  transform-origin: right;
+  transition-delay: 0.65s;
+}
+
+.hover:hover .hover-line-left {
+  transform: scale(1);
+  transform-origin: bottom;
+  transition-delay: 0.95s;
+}
+
+.hover-line {
+  background: #333;
+  position: absolute;
+  transition: transform 0.2s ease-in-out;
+}
+
+.hover-line-top {
+  width: 100%;
+  height: 2px;
+  top: 0;
+  transform: scale(0);
+  transform-origin: right;
+}
+
+.hover-line-right {
+  width: 2px;
+  height: 100%;
+  right: 0;
+  transform: scale(0);
+  transform-origin: bottom;
+  transition-delay: 0.35s;
+}
+
+.hover-line-bottom {
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  transform: scale(0);
+  transform-origin: left;
+  transition-delay: 0.65s;
+}
+
+.hover-line-left {
+  width: 2px;
+  height: 100%;
+  left: 0;
+  transform: scale(0);
+  transform-origin: top;
+  transition-delay: 0.95s;
+}
+@font-face{
+	font-family: bold;
+	src:url(assets/webfonts/Radomir Tinkov - Gilroy-ExtraBold.otf);
+}
+@font-face{
+	font-family: light;
+	src:url(assets/webfonts/Radomir Tinkov - Gilroy-Light.otf);
+}
+
+  /***********************/
+ /**** Default CSS ******/
+/***********************/
+html{
+	font-size: 62.5%;
+}
+body{
+	font-family: 'Inter', sans-serif;
+	font-weight: 400; 
+	font-size: 1.5rem;
+	margin: 0;
+}
+h1,h2,h3,h4,h5,h6,p,ul{
+	margin: 0;
+}
+
+ul{
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+img{
+  width: 100%;
+
+}
+h1{
+	font-family: bold;
+	position: relative;
+	font-weight: 700;
+	font-size: 5.3rem;
+	z-index:333;
+	color: white !important;
+	height: 6rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-shadow: 0px 1px 4px #ff6f00;
+}
+h1 {
+
+	/* margin: 0; */
+}
+/*after-button*/
+.after-button, .get{
+	display: none;
+	width: 4rem;
+	height: 6rem;
+	position: relative;
+	border-bottom: .2rem solid white;
+	position: absolute;
+	right: 0;
+	top: -4.6rem;
+	cursor: pointer;
+}
+.get{
+	animation-name: back;
+	animation-duration: .5s;
+	 animation-fill-mode: both;
+}
+.after-button:before, .get:before{
+		content: "";
+	position: absolute;
+	width: 100%;
+	height: .2rem;
+	top: 3rem;
+	left: 0;
+	background: white;
+}
+ .get::before {
+		animation-name: roteds;
+	animation-duration: .5s;
+	 animation-fill-mode: both;
+
+}
+.after-button:after, .get:after{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: .2rem;
+	top: 4.5rem;
+	left: 0;
+	background: white;
+}
+.get::after {
+	animation-name: example;
+	animation-duration: .5s;
+	 animation-fill-mode: both;
+}
+
+@keyframes example {
+	from{
+
+	}
+  to {
+  	top: 4rem;
+   transform: rotate(-45deg);
+   
+    }
+}
+@keyframes roteds {
+  to {
+  	top: 4rem;
+   transform: rotate(45deg);
+   
+    }
+}
+@keyframes back {
+
+  to {
+  	border: none;
+  }
+
+
+}
+
+/* ******************************** */
+/* ********Header Top Area******** */ 
+/* ****************************** */
+.header-area{
+	position: relative;
+	background: url(../images/banner-img.jpg) no-repeat scroll  0 0 / cover;
+	z-index: 111;
+	padding-top: 2.1rem;
+}
+.header-area:after{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width:100%;
+	height: 100%;
+	background:black;
+	opacity: .4;
+	z-index: -111;
+}
+.header-top{
+	display: flex;
+	align-items: center;
+	
+}
+.menu-area{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.menu ul {
+	display: flex;
+	align-items: center;
+	list-style: none;
+	margin: 0;
+	gap: 1.1rem;
+}
+
+
+.menu ul li a {
+	color: white;
+	font-size: 1.6rem;
+	font-weight: 600;
+	font-family: bold;
+	position: relative;
+}
+.menu ul li a:after{
+	width: 0rem;
+	height: .1rem;
+	background: #fff;
+	content: "";
+	position: absolute;
+  bottom: -.4rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: .4s;
+}
+.menu ul li a:hover:after, .menu ul .active a:after{
+	width: 100%;
+}
+
+.sesion-btn a:first-child {
+	margin-left: 2rem;
+	margin-right: 0.7rem;
+}
+.sesion-btn a {
+	padding: .7rem 2rem;
+	border: .1rem solid white;
+	border-radius: 2.5rem;
+	color: white;
+	font-size: 1.8rem;
+	font-weight: 700;
+}
+.sesion-btn a:hover{
+	color: #303030;
+	background: white;
+
+}
+.banner-content{
+	padding: 18.4rem 0;
+	text-align: center;
+}
+/* ******************************** */
+/* ********** lorem-area ********* */ 
+/* ****************************** */
+.lorem-area{
+	padding: 11.7rem 0;
+}
+.lorem-card{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-column-gap: 3rem;
+	grid-row-gap: 7rem;
+}
+.card.card-area {
+	width: 98%;
+}
+/*coment-area*/
+.card.card-area {
+	border: none !important;
+	transition: .5s;
+}
+.card-area:hover{
+   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+   border-radius: 1rem;
+}
+.card-body {
+	padding: 2rem 2rem !important;
+	
+}
+
+.coment-area{
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.3rem;
+	color: #333333;
+	padding-bottom: 1rem;
+}
+.card-title{
+	color: #333333;
+	font-size: 3rem;
+	padding-bottom: 1rem;
+}
+.btn.stretched-link {
+	background: #3F097E;
+	border-radius: 2.5rem;
+	padding: 1rem 3rem;
+	font-size: 1.6rem;
+	color: white;
+}
+.card-text{
+	font-size: 1.8rem;
+	color:  #333333;
+	padding-bottom: 3rem;
+}
+.lorem-img{
+	position: relative;
+	overflow: hidden;
+	transition: .5s;
+}
+
+.scall img{
+	transition: .5s;
+}
+.card-area:hover .scall img {
+	transform: scale(1.2);
+}
+.logo-img img {
+	width: 30%;
+}
+.lorem-img::before{
+	transition: .5s;
+}
+.lorem-img:after{
+	transition: .5s;
+}
+.card-area:hover .lorem-img::before {
+	position: absolute;
+	content: "";
+	width: 42rem;
+	height: 28rem;
+	background: #1BE68D;
+	bottom: -19rem;
+	left: -4rem;
+	filter: blur(3rem);
+	z-index: 3333333333;
+}
+.card-area:hover .lorem-img::after {
+	position: absolute;
+	width: 90%;
+	height: 90%;
+	bottom: 0;
+	border: .1rem solid white;
+	left: 0;
+	right: 0;
+	top: 0;
+	margin: auto;
+	content: "";
+	border-top-left-radius: 1rem;
+	border-top-right-radius: 1rem;
+	z-index: 99999999999;
+}
+/* ******************************** */
+/* ********* footer-area ********* */ 
+/* ****************************** */
+
+.footer-area {
+	background: #3F097E;
+	padding: 6rem 0;
+}
+.border-bottom{
+	border-color: #653a98 !important;
+}
+.widance-img img {
+	max-width: 19rem;
+	width: 100%;
+	padding-bottom: 5rem;
+}
+.visita-blog{
+	display: flex;
+	justify-content: space-between;
+}
+.visita h3{
+	font-size: 2rem;
+	color: white;
+	font-family: bold;
+	font-weight: 700;
+}
+.visita p {
+	font-size: 1.8rem;
+	font-family: light;
+	font-weight: 400;
+	color: white;
+	padding: 2rem 0rem;
+}
+.visita-icong {
+	display: flex;
+}
+.visita i:first-child{
+	margin-right: 1rem;
+}
+.visita i {
+	color: white;
+	width: 4rem;
+	height: 4rem;
+	font-size: 1.8rem;
+	background: #53228B;
+	display: flex;
+	border-radius: 100%;
+	justify-content: center;
+	align-items: center;
+	transition: .3s;
+}
+.visita i:hover{
+	background: white;
+	color:#53228B; 
+}
+.email-area h3{
+	font-size: 2rem;
+	color: white;
+	font-weight: 700;
+	font-family: bolt;
+}
+.form-area input {
+	font-size: 1.6rem;
+	background: #3F097E;
+	color: white;
+	border-color: #653a98;
+}
+.form-area input::placeholder{
+	color: white;
+}
+.form-area input:focus{
+	color: white;
+	background:#53228B; 
+}
+.form-area .btn {
+	background: #1BE68D;
+	padding: 1rem 3rem;
+	border-radius: 25rem;
+	color: #53228B;
+	font-weight: 700;
+	font-family: bolt;
+	font-size: 1.8rem;
+}
+.copy-area {
+	display: flex;
+	justify-content: space-between;
+	color: white;
+	padding-top: 5rem;
+	font-family: light;
+	font-weight: 400;z
+}
+
+
+.menu span{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    border: .2rem solid #fff;
+    transition: background-color 0.3s;
+    box-shadow: 0 0 10px #ff6f00, 0 0 20px #ff6f00, 0 0 30px #ff6f00;
+    animation-name: focus-light;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running;
+
+}
+
+@keyframes focus-light{
+	0%{
+		transform: scale(.2);
+		background: #fff;
+		border-radius: 100%;
+	}
+	100%{
+		transform: scale(.6);
+		border-radius: 100%;
+	}
+}
+.widance-img img {
+	width: 7%;
+}
